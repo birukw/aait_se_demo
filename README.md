@@ -6,13 +6,11 @@ Two "actors", both played by me, have been fake-working on developing a simple m
 
 
 ## Source code management
-For this demo, we are using the git source code management system (SCM). The tutorial below shows you the basics of git:
-https://try.github.io/levels/1/challenges/1
+For this demo, we are using the git source code management system (SCM). You can read the tutorial on https://try.github.io/ to get started with git in 15 minutes.
 
-This demo is hosted on GitHub, which provides easy-to-use git repositories with extra features for collaborating on projects. Navigate [this project](https://github.com/birukw/aait_se_demo) to see a history of commits, branches, and merges.
+This demo is hosted on GitHub, which provides easy-to-use git repositories with extra features for collaborating on projects. Navigate this project to see a history of commits, branches, and merges. You can see a [graphical summary of branches and merges here](https://github.com/birukw/aait_se_demo/network). You can see [a summary of the activities on this project here](https://github.com/birukw/aait_se_demo/pulse).
 
-To start your own project on GitHub, create a github.com account and read the guide:
-https://guides.github.com/activities/hello-world/
+To start your own project on GitHub, create a github.com account and read the [guide](https://guides.github.com/activities/hello-world/).
 
 Once you have created your project, you can invite collaborators to work on it.
 
@@ -20,7 +18,7 @@ Once you have created your project, you can invite collaborators to work on it.
 This project builds with GNU Make. You can get an introduction to GNU Make [here](https://www.gnu.org/software/make/manual/make.html#Introduction).
 
 ## Issue Tracking
-GitHub has a built-in issue tracker that are used in this demo for managing feature requests and bugs. Browse [the list of issues](https://github.com/birukw/aait_se_demo/issues?utf8=%E2%9C%93&q=is%3Aissue+) to observe how the two developers collaborated on this project.
+GitHub has a built-in issue tracker that is used in this demo for managing feature requests and bugs. Browse [the list of issues](https://github.com/birukw/aait_se_demo/issues?utf8=%E2%9C%93&q=is%3Aissue+) to observe how the two developers collaborated on this project.
 
 ## Code Reviews
 GitHub has a built in mechanism for code reviews. A developer can request a code review when creating a pull request.
