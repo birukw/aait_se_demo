@@ -32,7 +32,11 @@ struct TestInputs {
 };
 
 bool test_modulo_multiply() {
-	TestInputs inputs[] = { {1, 2, 3}, {2, 2, 3}, {2, 2, 4} };
+	TestInputs inputs[] = {
+		{1, 2, 3},
+		{2, 2, 3},
+		{2, 2, 4}
+	};
 
 	int expected[] = {2, 1, 0};
 	for (int i=0; i<3; ++i) {
@@ -43,7 +47,11 @@ bool test_modulo_multiply() {
 }
 
 bool test_modulo_add() {
-	TestInputs inputs[] = { {1, 1, 3}, {2, 2, 3}, {1, 2, 3} };
+	TestInputs inputs[] = {
+		{1, 1, 3},
+		{2, 2, 3},
+		{1, 2, 3}
+	};
 
 	int expected[] = {2, 1, 0};
 	for (int i=0; i<3; ++i) {
