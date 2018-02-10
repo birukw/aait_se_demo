@@ -1,13 +1,13 @@
 all: modulo_lib_test
 
 modulo_lib.o: modulo_lib.cc modulo_lib.h 
-	g++ -c $< -o $@
+	$(CXX) -c $< -o $@
 
 modulo_lib_test.o: modulo_lib_test.cc modulo_lib.h 
-	g++ -c $< -o $@
+	$(CXX) -c $< -o $@
 
 modulo_lib_test: modulo_lib.o modulo_lib_test.o
-	g++ $^ -o $@
+	$(CXX) $^ -o $@
 
 test: modulo_lib_test
 	./$^
