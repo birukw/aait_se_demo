@@ -1,4 +1,4 @@
-all: modulo_lib.o modulo_lib_test.o modulo_lib_test
+all: modulo_lib.o modulo_lib_test.o
 
 modulo_lib.o: modulo_lib.cc modulo_lib.h 
 	g++ -c $< -o $@
@@ -6,11 +6,5 @@ modulo_lib.o: modulo_lib.cc modulo_lib.h
 modulo_lib_test.o: modulo_lib_test.cc modulo_lib.h 
 	g++ -c $< -o $@
 
-modulo_lib_test: modulo_lib.o modulo_lib_test.o
-	g++ modulo_lib.o modulo_lib_test.o -o $@
-
-test: modulo_lib_test
-	./modulo_lib_test
-
 clean:
-	rm -rf *.o modulo_lib_test
+	rm -rf *.o
