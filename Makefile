@@ -7,7 +7,7 @@ modulo_lib_test.o: modulo_lib_test.cc modulo_lib.h
 	g++ -c modulo_lib_test.cc -o $@
 
 modulo_lib_test: modulo_lib.o modulo_lib_test.o
-	g++ modulo_lib.o modulo_lib_test.o -o $@
+	g++ $^ -o $@
 
 test: modulo_lib_test
 	./modulo_lib_test
