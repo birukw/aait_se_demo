@@ -27,13 +27,29 @@ std::string status(bool passed) {
 }
 
 
+struct TestInputs {
+	int a, b, mod;
+};
+
 bool test_modulo_multiply() {
-    // TODO(tomichaw): Implement this.
+	TestInputs inputs[] = { {1, 2, 3}, {2, 2, 3}, {2, 2, 4} };
+
+	int expected[] = {2, 1, 0};
+	for (int i=0; i<3; ++i) {
+		int result = modulo_multiply(inputs[i].a, inputs[i].b, inputs[i].mod);
+		ASSERT_EQUAL(result, expected[i]);
+	}
 	return true;
 }
 
 bool test_modulo_add() {
-    // TODO(tomichaw): Implement this.
+	TestInputs inputs[] = { {1, 1, 3}, {2, 2, 3}, {1, 2, 3} };
+
+	int expected[] = {2, 1, 0};
+	for (int i=0; i<3; ++i) {
+		int result = modulo_add(inputs[i].a, inputs[i].b, inputs[i].mod);
+		ASSERT_EQUAL(result, expected[i]);
+	}
 	return true;
 }
 
