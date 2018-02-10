@@ -10,5 +10,5 @@ int modulo_add(int a, int b, int mod) {
 }
 
 void print(std::string message, int result, std::ostream& out) {
-	out << message << ": " << result;
+	out << message << ": " << result << std::endl;
 }
