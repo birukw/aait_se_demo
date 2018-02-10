@@ -1,5 +1,6 @@
 #include "modulo_lib.h"
 #include <iostream>
+#include <sstream>
 
 #define ASSERT_EQUAL(a, b) \
 if (a != b) { \
@@ -61,16 +62,23 @@ bool test_modulo_add() {
 	return true;
 }
 
-// QUESTION: How do you test the "print" function?
+bool test_print() {
+	std::ostringstream out;
+	print("message", 10, out);
+	ASSERT_EQUAL(out.str(), "message: 10\n");
+    return true; 
+}
 
 
 int main(int argc, char* argv[]) {
 	bool multiply_passed = test_modulo_multiply();
 	bool add_passed = test_modulo_add();
+	bool print_passed = test_print();
 	std::cout << "modulo_multiply: " << status(multiply_passed) << std::endl;
 	std::cout << "modulo_add: " << status(add_passed) << std::endl;
+	std::cout << "print: " << status(print_passed) << std::endl;
 
-	if (multiply_passed && add_passed) {
+	if (multiply_passed && add_passed && print_passed) {
 		std::cout << color(0, "All test cases passed!");
 		return 0;
 	}
