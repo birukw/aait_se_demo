@@ -2,7 +2,7 @@
 #include <iostream>
 
 int modulo_multiply(int a, int b, int mod) {
-	return (a * b) % (mod + 1);
+	return (a * b) % mod;
 }
 
 int modulo_add(int a, int b, int mod) {
